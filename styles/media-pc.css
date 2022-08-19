@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*Cabeçalho*/
+
+.mobile-menu {
+    display: none;
+}
+
+.menu {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 1.1em;
+    color: var(--colorback);
+    margin: 0px 10px;
+}
+/*Conteúdo*/
+
+#about {
+    display: flex;
+}
+
+.text-profile {
+    margin-left: 40px;
+}
+
+#projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#projects .projeto{
+    margin: 0% 3%;
+    text-align: justify;
+    max-width: 44%;
+}
+
+.social-medias {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rede a p {
+    display: block;
+}
+
+/*Rodapé*/
