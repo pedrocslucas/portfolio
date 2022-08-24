@@ -144,6 +144,10 @@ section p {
     font-size: 1.2em;
 }
 
+.photo-profile {
+    text-align: center;
+}
+
 .download {
     margin: 0px auto;
     text-align: center;
