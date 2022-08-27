@@ -147,6 +147,9 @@ section p {
 .photo-profile {
     text-align: center;
 }
+.photo-profile img {
+    cursor: pointer;
+}
 
 .download {
     margin: 0px auto;
