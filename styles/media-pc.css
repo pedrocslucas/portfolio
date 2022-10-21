@@ -40,15 +40,6 @@
     max-width: 44%;
 }
 
-.projeto a img {
-    box-sizing: border-box;
-    transition: .5s;
-}
-
-.projeto a img:hover {
-    transform: scale(110%);
-}
-
 .social-medias {
     align-items: center;
     justify-content: space-between;
