@@ -226,6 +226,10 @@ section p {
     font-family: 'Source Code Pro', monospace;
 }
 
+#contacts h2 {
+    text-align: center;
+}
+
 #contacts p {
     font-family: Arial, Helvetica, sans-serif;
 }
