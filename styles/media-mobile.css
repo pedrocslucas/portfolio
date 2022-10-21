@@ -116,7 +116,7 @@ header > h1 {
 main {
     max-width: 768px;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
     display: block;
 }
 
@@ -160,7 +160,7 @@ section p {
     font-size: 1em;
     font-weight: bold;
     display: flex;
-    margin: 0px auto;
+    margin: auto;
     align-items: center;
     justify-content: center;
     padding: 5px;
@@ -200,26 +200,6 @@ section p {
 
 .projeto a img {
     /*Imagem de projeto tamanho: 666px 210px*/
-
-}
-
-.social-medias {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.rede a {
-    text-decoration: none;
-}
-
-.logo-redes {
-    color: var(--cor2);
-}
-
-.rede a p {
-    display: none;
-    font-size: .9em;
 }
 
 #contacts {
@@ -232,6 +212,26 @@ section p {
 
 #contacts p {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-medias {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rede a {
+    text-decoration: none;
+}
+
+.rede a p {
+    display: none;
+    font-size: .9em;
+}
+
+.logo-redes:hover {
+    transform: scale(110%);
 }
 
 /*Rodapé*/
