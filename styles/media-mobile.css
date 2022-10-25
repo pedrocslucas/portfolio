@@ -255,3 +255,13 @@ footer > p {
     padding: 8px;
     color: var(--colorback);
 }
+
+footer > p > a {
+    text-decoration: none;
+    color: var(--cor2);
+    cursor: pointer;
+}
+
+footer > p > a:hover {
+    color: var(--cor5);
+}
