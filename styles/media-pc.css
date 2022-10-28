@@ -29,6 +29,10 @@
     margin-left: 40px;
 }
 
+.info {
+    width: 60%;
+}
+
 #projects {
     flex-direction: row;
     flex-wrap: wrap;
