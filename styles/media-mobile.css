@@ -14,6 +14,9 @@
     --cor3: #2688D4;
     --cor4: #262CD4;
     --cor5: #5C2CF6;
+    --font-menu: 'Nunito', sans-serif;
+    --font-title: 'Maven Pro', sans-serif;
+    --font-text: 'Source Code Pro', monospace;
 }
 
 html {
@@ -42,7 +45,7 @@ header {
 }
 
 header {
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--font-menu);
     background-color: var(--cor4);
     font-weight: lighter;
     border-bottom: 2px solid var(--cor3);
@@ -128,7 +131,7 @@ main {
 }
 
 main > h2 {
-    font-family: 'Maven Pro', sans-serif;
+    font-family: var(--font-title);
     padding-top: 90px;
     text-align: center;
     font-size: 1.8em;
@@ -149,7 +152,7 @@ section {
 }
 
 section h2 {
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--font-text);
     font-size: 1.4em;
 }
 
@@ -164,8 +167,40 @@ section p {
     cursor: pointer;
 }
 
+.info {
+    height: 24px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.info svg path {
+    fill: var(--cor5);
+}
+
+.info svg:hover {
+    height: 24px;
+    width: 24px;
+}
+
+.info svg:hover path {
+    fill: var(--cor2);
+}
+
+.info > p {
+    font-size: .9em;
+    display: inline;
+}
+
 .feature-plus {
-    font-family: 'Maven Pro', sans-serif;
+    font-family: var(--font-title);
     font-size: 1em;
     font-weight: bold;
     display: flex;
@@ -192,6 +227,10 @@ section p {
     background-color: var(--cor5);
 }
 
+.education img {
+    display: inline-block;
+}
+
 #projects {
     display: flex;
     flex-direction: column;
@@ -213,7 +252,7 @@ section p {
 }
 
 #contacts {
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--font-text);
 }
 
 #contacts h2 {
@@ -221,7 +260,7 @@ section p {
 }
 
 #contacts p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-menu);
 }
 
 .social-medias {
