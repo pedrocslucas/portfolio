@@ -21,6 +21,12 @@
 }
 /*Conteúdo*/
 
+#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 #about {
     display: flex;
 }
@@ -44,9 +50,10 @@
     max-width: 44%;
 }
 
-.social-medias {
-    align-items: center;
-    justify-content: space-between;
+.social-medias a {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 50%;
 }
 
 /*Rodapé*/

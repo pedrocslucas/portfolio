@@ -162,6 +162,11 @@ section p {
 
 /*Home*/
 
+#home {
+    display: flex;
+    flex-direction: column;
+}
+
 #home h1 {
     font-size: 2em;
     font-family: var(--font-text);
@@ -188,6 +193,7 @@ section p {
     padding: 5px;
     height: 28px;
     border-radius: 5px;
+    border: 2px solid var(--cor4);
 }
 
 .home-rede a:hover {
@@ -253,6 +259,7 @@ section p {
     background-color: var(--cor2);
     border-radius: 10px;
     cursor: pointer;
+    border: 2px solid var(--cor4);
 }
 
 .feature-plus a {
@@ -314,7 +321,6 @@ section p {
 
 .rede {
     background-color: var(--cor5);
-    width: 50%;
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 10px;
