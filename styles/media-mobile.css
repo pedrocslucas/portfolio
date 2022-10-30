@@ -202,6 +202,7 @@ section p {
     height: 28px;
     border-radius: 5px;
     border: 2px solid var(--cor4);
+    transition: .3s;
 }
 
 .home-rede a:hover {
@@ -272,11 +273,12 @@ section p {
     border-radius: 10px;
     cursor: pointer;
     border: 2px solid var(--cor4);
+    transition: .3s;
 }
 
 .feature-plus a {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 .feature-plus img {
@@ -324,29 +326,34 @@ section p {
     display: flex;
     align-items: initial;
     flex-direction: column;
+    justify-content: space-around;
     list-style: none;
 }
 
 .social-medias a {
     text-decoration: none;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .rede {
-    background-color: var(--cor5);
-    width: 80%;
-    margin-bottom: 20px;
+    background-color: var(--cor2);
+    width: 70%;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+    border: 2px solid var(--cor4);
+    transition: .3s;
 }
 
 .rede:hover {
-    background-color: #754df8;
+    background-color: var(--cor5);
 }
 
 .rede p {
     margin: 0px;
-    color: var(--colorback);
+    color: #000;
 }
 
 @media screen and (max-width: 499px){
