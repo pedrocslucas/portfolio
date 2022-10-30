@@ -27,6 +27,18 @@
     justify-content: space-between;
 }
 
+#home h1 {
+    text-align: center;
+}
+
+#home h2 {
+    text-align: center;
+}
+
+#home > img {
+    display: block;
+}
+
 #about {
     display: flex;
 }
