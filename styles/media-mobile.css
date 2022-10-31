@@ -324,9 +324,7 @@ section p {
 /*Contatos*/
 .social-medias {
     display: flex;
-    align-items: initial;
     flex-direction: column;
-    justify-content: space-around;
     list-style: none;
 }
 
@@ -338,31 +336,24 @@ section p {
 }
 
 .rede {
-    background-color: var(--cor2);
-    width: 70%;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    border: 2px solid var(--cor4);
-    transition: .3s;
-}
-
-.rede:hover {
-    background-color: var(--cor5);
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .rede p {
     margin: 0px;
+    margin-left: 10px;
     color: #000;
 }
 
-@media screen and (max-width: 499px){
-    .rede {
-        width: 24px;
-    }
+.rede:hover{
+    transform: scale(101%);
+}
 
+@media screen and (max-width: 499px){
     .rede p {
-        display: none;
+        font-size: .9em;
     }
 }
 
