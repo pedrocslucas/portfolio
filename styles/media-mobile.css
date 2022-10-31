@@ -182,6 +182,8 @@ section p {
 .home-media {
     list-style: none;
     display: flex;
+    padding: 0;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
