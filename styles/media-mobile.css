@@ -140,7 +140,7 @@ main > h2 {
 
 main > hr {
     margin: 0 auto;
-    width: 50vw;
+    max-width: 100%;
     border: none;
     background-color: var(--cor2);
     height: 2px;
