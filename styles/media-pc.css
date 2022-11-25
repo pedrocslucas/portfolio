@@ -66,8 +66,9 @@
     max-width: 44%;
 }
 
-.social-medias a {
-    width: 50%;
+.social-medias {
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /*Rodapé*/
