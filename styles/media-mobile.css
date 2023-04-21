@@ -335,17 +335,17 @@ section p {
 }
 
 .social-medias a {
-    background-color: var(--cor5);
+    background-color: var(--cor2);
     margin: 10px 0px;
     padding: 10px;
     text-decoration: none;
-    color: white;
-    border: 2px solid var(--cor2);
+    color: black;
+    border: 2px solid var(--cor5);
     border-radius: 10px;
     width: 240px;
     display: flex;
     align-items: center;
-    transition: .3s;
+    transition: .7s;
 }
 
 .rede p {
@@ -354,7 +354,8 @@ section p {
 }
 
 .social-medias a:hover {
-    background-color: var(--cor2);
+    transform: scale(110%);
+    background-color: var(--cor5);
 }
 
 /*Logos das Redes*/
