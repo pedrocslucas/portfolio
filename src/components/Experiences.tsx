@@ -1,5 +1,4 @@
 // src/components/Experiences.tsx
-import React from "react";
 import {
   Box,
   Typography,

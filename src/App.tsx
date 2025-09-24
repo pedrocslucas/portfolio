@@ -16,11 +16,7 @@ function App() {
       {/* Conteúdo principal */}
       <Container maxWidth="lg" sx={{ mt: 4 }}>
         <section id="home">
-          <Hero
-            name="Pedro Lucas"
-            title="Software Developer | Frontend & Backend"
-            photo="/images/profile-photo.png"
-          />
+          <Hero />
         </section>
 
         <section id="sobre">

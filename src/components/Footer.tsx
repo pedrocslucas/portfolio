@@ -1,5 +1,4 @@
 // src/components/Footer.tsx
-import React from "react";
 import { Box, Typography, IconButton } from "@mui/material";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 

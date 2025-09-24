@@ -10,7 +10,7 @@ interface HeroProps {
   photo: string;
 }
 
-const Hero: React.FC<HeroProps> = ({ name, title, photo }) => {
+const Hero = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}

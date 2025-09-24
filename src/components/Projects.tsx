@@ -1,9 +1,9 @@
 // src/components/Projects.tsx
-import React from "react";
-import { Box, Typography, Paper, Button, Grid } from "@mui/material";
+import { Box, Typography, Paper, Button} from "@mui/material";
 import { motion } from "framer-motion";
 import { projectsData } from "../mocks/data";
 import Slider from "react-slick";
+import Grid from "@mui/material/Grid";
 
 // Estilos do carrossel
 import "slick-carousel/slick/slick.css";

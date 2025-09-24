@@ -1,8 +1,9 @@
 // src/components/About.tsx
 import React from "react";
-import { Typography, Box, Grid, Paper, Tooltip } from "@mui/material";
+import { Typography, Box, Paper, Tooltip } from "@mui/material";
 import { motion } from "framer-motion";
 import { aboutData } from "../mocks/data";
+import Grid from "@mui/material/Grid";
 
 const About: React.FC = () => {
   return (
