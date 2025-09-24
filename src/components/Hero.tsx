@@ -1,14 +1,7 @@
 // src/components/Hero.tsx
-import React from "react";
 import { Box, Typography, Avatar, Button } from "@mui/material";
 import { motion } from "framer-motion";
 import  { heroData } from "../mocks/data";
-
-interface HeroProps {
-  name: string;
-  title: string;
-  photo: string;
-}
 
 const Hero = () => {
   return (
