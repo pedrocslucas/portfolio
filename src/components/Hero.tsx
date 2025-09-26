@@ -2,6 +2,7 @@
 import { Box, Typography, Avatar, Button } from "@mui/material";
 import { motion } from "framer-motion";
 import  { heroData } from "../mocks/data";
+import NeoButton from "../widgets/NeoButton";
 
 const Hero = () => {
   return (
@@ -51,33 +52,7 @@ const Hero = () => {
             {heroData.title}
           </Typography>
 
-          {/* Botão Neomórfico */}
-          <Button
-            href="#projects"
-            sx={{
-              mt: 2,
-              px: 4,
-              py: 1.2,
-              borderRadius: "30px",
-              fontWeight: "bold",
-              background: "#f5f5f5",
-              color: "#1976d2",
-              boxShadow: `
-                6px 6px 12px #d1d1d1,
-                -6px -6px 12px #ffffff
-              `,
-              transition: "all 0.3s ease",
-              "&:hover": {
-                boxShadow: `
-                  inset 4px 4px 8px #d1d1d1,
-                  inset -4px -4px 8px #ffffff
-                `,
-                background: "#f0f0f0",
-              },
-            }}
-          >
-            Ver Projetos
-          </Button>
+          <NeoButton href="#projects">Ver Projetos</NeoButton>
         </Box>
       </Box>
     </motion.div>

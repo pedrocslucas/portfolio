@@ -1,6 +1,6 @@
 // src/mocks/data.ts
 import { FaCode, FaRocket, FaUsers, FaReact, FaNodeJs, FaPython, FaGitAlt, FaDatabase, FaCss3Alt, FaJsSquare, FaJava, FaHtml5, FaCuttlefish } from "react-icons/fa";
-import { SiTypescript, SiMui, SiFigma, SiFirebase, SiDotnet } from "react-icons/si";
+import { SiTypescript, SiMui, SiFigma, SiFirebase, SiDotnet, SiSpringboot } from "react-icons/si";
 
 // FOTOS
 import foto_perfil from "../assets/hero/foto-perfil.png";
@@ -34,6 +34,7 @@ export const aboutData = {
     { name: "Python", icon: FaPython, description: "Linguagem de Programação" },
     { name: "C#", icon: FaCuttlefish, description: "Linguagem de Programação" },
     { name: "JAVA", icon: FaJava, description: "Linguagem de Programação" },
+    { name: "SpringBoot", icon: FaJava, description: "Framework" },
     { name: "HTML", icon: FaHtml5, description: "HyperText" },
     { name: "CSS", icon: FaCss3Alt, description: "Estilo" },
     { name: "SQL", icon: FaDatabase, description: "Banco de Dados" },
@@ -43,7 +44,7 @@ export const aboutData = {
   ],
   highlights: [
     {
-      title: "Código Limpo",
+      title: "Código",
       description:
         "Priorizo boas práticas e padrões de desenvolvimento, entregando soluções escaláveis e bem estruturadas.",
       icon: FaCode,

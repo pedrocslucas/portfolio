@@ -1,4 +1,3 @@
-// src/components/Header.tsx
 import { useState } from "react";
 import {
   AppBar,
@@ -50,7 +49,16 @@ const Header = () => {
         }}
       >
         <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 600 }}>
+          {/* Nome com destaque azul */}
+          <Typography
+            variant="h6"
+            sx={{
+              flexGrow: 1,
+              fontWeight: 700,
+              color: "#11579eff",
+              letterSpacing: 1,
+            }}
+          >
             Pedro Lucas
           </Typography>
 
@@ -61,23 +69,24 @@ const Header = () => {
                 key={section}
                 onClick={() => handleScroll(section)}
                 sx={{
-                  borderRadius: 2,
-                  px: 2,
+                  borderRadius: "30px",
+                  px: 3,
                   py: 1,
                   background: "#f5f5f5",
                   boxShadow: `
-                    4px 4px 8px #d1d1d1,
-                    -4px -4px 8px #ffffff
+                    6px 6px 12px #d1d1d1,
+                    -6px -6px 12px #ffffff
                   `,
                   textTransform: "capitalize",
-                  color: theme.palette.text.primary,
-                  fontWeight: 500,
+                  color: "#11579eff",
+                  fontWeight: 600,
                   transition: "all 0.3s ease",
                   "&:hover": {
                     boxShadow: `
-                      inset 2px 2px 5px #d1d1d1,
-                      inset -2px -2px 5px #ffffff
+                      inset 4px 4px 8px #d1d1d1,
+                      inset -4px -4px 8px #ffffff
                     `,
+                    background: "#f0f0f0",
                     transform: "scale(1.05)",
                   },
                 }}
@@ -106,12 +115,12 @@ const Header = () => {
               },
             }}
           >
-            <MenuIcon />
+            <MenuIcon sx={{ color: "#11579eff" }} />
           </IconButton>
         </Toolbar>
       </AppBar>
 
-      {/* Drawer lateral */}
+      {/* Drawer lateral (mobile) */}
       <Drawer
         anchor="right"
         open={mobileOpen}
@@ -135,7 +144,7 @@ const Header = () => {
                 <ListItemButton
                   onClick={() => handleScroll(section)}
                   sx={{
-                    borderRadius: 2,
+                    borderRadius: "30px",
                     mb: 1,
                     px: 2,
                     boxShadow: `
@@ -152,6 +161,11 @@ const Header = () => {
                 >
                   <ListItemText
                     primary={section.charAt(0).toUpperCase() + section.slice(1)}
+                    primaryTypographyProps={{
+                      fontWeight: 600,
+                      color: "#11579eff",
+                      textAlign: "center",
+                    }}
                   />
                 </ListItemButton>
               </ListItem>

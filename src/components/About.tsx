@@ -1,9 +1,9 @@
-// src/components/About.tsx
 import React from "react";
-import { Typography, Box, Paper, Tooltip } from "@mui/material";
+import { Typography, Box, Paper } from "@mui/material";
 import { motion } from "framer-motion";
 import { aboutData } from "../mocks/data";
 import Grid from "@mui/material/Grid";
+import Skills from "./Skills";
 
 const About: React.FC = () => {
   return (
@@ -38,64 +38,8 @@ const About: React.FC = () => {
           {aboutData.text}
         </Typography>
 
-        {/* Cards de Techs */}
-        <Grid container spacing={3} justifyContent="center">
-          {aboutData.skills.map((skill, idx) => {
-            const Icon = skill.icon;
-            return (
-              <Grid
-                item
-                xs={6}
-                sm={4}
-                md={2}
-                key={idx}
-                display="flex"
-                flexDirection="column"
-                alignItems="center"
-                mb={2}
-              >
-                <Tooltip title={skill.description} arrow placement="top">
-                  <motion.div
-                    whileHover={{ scale: 1.1, rotate: 2 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                    style={{ width: "100%" }}
-                  >
-                    <Paper
-                      sx={{
-                        p: 3,
-                        borderRadius: 3,
-                        width: "100%",
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        background: "#f5f5f5",
-                        boxShadow:
-                          "8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff",
-                        transition: "all 0.3s ease",
-                        cursor: "pointer",
-                        "&:hover": {
-                          boxShadow:
-                            "inset 6px 6px 12px #d1d1d1, inset -6px -6px 12px #ffffff",
-                        },
-                      }}
-                    >
-                      <Icon size={42} color="#1976d2" />
-                      <Typography
-                        mt={1}
-                        fontWeight="bold"
-                        fontSize={{ xs: "0.85rem", md: "1rem" }}
-                        textAlign="center"
-                      >
-                        {skill.name}
-                      </Typography>
-                    </Paper>
-                  </motion.div>
-                </Tooltip>
-              </Grid>
-            );
-          })}
-        </Grid>
+        {/* Skills extraídas para componente separado */}
+        <Skills />
 
         {/* Cards de diferenciais */}
         <Grid container spacing={4} justifyContent="center" mt={6}>

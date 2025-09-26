@@ -8,6 +8,7 @@ import Grid from "@mui/material/Grid";
 // Estilos do carrossel
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import NeoButton from "../widgets/NeoButton";
 
 const Projects = () => {
   const sliderSettings = {
@@ -161,29 +162,13 @@ const Projects = () => {
         ))}
       </Box>
 
-      {/* Botão Ver Mais */}
       <Box textAlign="center" mt={6}>
-        <Button
-          variant="contained"
+        <NeoButton
           href="https://github.com/pedrocslucas?tab=repositories"
           target="_blank"
-          sx={{
-            px: 4,
-            py: 1.5,
-            borderRadius: 3,
-            background: "#e0e0e0",
-            boxShadow: "6px 6px 12px #bebebe, -6px -6px 12px #ffffff",
-            color: "#000",
-            fontWeight: 600,
-            textTransform: "none",
-            "&:hover": {
-              boxShadow: "inset 3px 3px 6px #bebebe, inset -3px -3px 6px #ffffff",
-              transform: "scale(1.05)",
-            },
-          }}
         >
           Ver mais no GitHub
-        </Button>
+        </NeoButton>
       </Box>
     </Box>
   );
