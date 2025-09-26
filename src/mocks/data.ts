@@ -3,7 +3,7 @@ import { FaCode, FaRocket, FaUsers, FaReact, FaNodeJs, FaPython, FaGitAlt, FaDat
 import { SiTypescript, SiMui, SiFigma, SiFirebase, SiDotnet } from "react-icons/si";
 
 // FOTOS
-import foto_perfil from "../assets/hero/foto-perfil.jpeg";
+import foto_perfil from "../assets/hero/foto-perfil.png";
 import blob_1 from "../assets/projects/blob_news/blob_foto_1.png";
 import blob_2 from "../assets/projects/blob_news/blob_foto_2.png";
 import blob_3 from "../assets/projects/blob_news/blob_foto_3.png";
@@ -19,7 +19,7 @@ import tre_ma from "../assets/experiences/tre-ma.jpeg";
 
 export const heroData = {
   name: "Pedro Lucas",
-  title: "Software Developer | Frontend & Backend",
+  title: "Full-Stack Developer | Frontend & Backend",
   photo: foto_perfil,
 };
 
