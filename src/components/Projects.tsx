@@ -1,5 +1,5 @@
 // src/components/Projects.tsx
-import { Box, Typography, Paper, Button} from "@mui/material";
+import { Box, Typography, Paper } from "@mui/material";
 import { motion } from "framer-motion";
 import { projectsData } from "../mocks/data";
 import Slider from "react-slick";

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Typography, Box, Paper, Tooltip, Button } from "@mui/material";
+import { Typography, Box, Paper, Tooltip } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { motion } from "framer-motion";
 import { aboutData } from "../mocks/data";

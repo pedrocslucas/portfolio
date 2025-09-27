@@ -11,7 +11,6 @@ import {
   ListItemButton,
   ListItemText,
   Box,
-  useTheme,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -19,7 +18,6 @@ const sections = ["home", "sobre", "projetos", "experiencias", "contatos"];
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const theme = useTheme();
 
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
@@ -72,7 +70,8 @@ const Header = () => {
                   borderRadius: "30px",
                   px: 3,
                   py: 1,
-                  background: "#f5f5f5",
+                  background: "rgba(245,245,245,0.7)",
+                  backdropFilter: "blur(10px)",
                   boxShadow: `
                     6px 6px 12px #d1d1d1,
                     -6px -6px 12px #ffffff
@@ -86,7 +85,7 @@ const Header = () => {
                       inset 4px 4px 8px #d1d1d1,
                       inset -4px -4px 8px #ffffff
                     `,
-                    background: "#f0f0f0",
+                    background: "rgba(240,240,240,0.9)",
                     transform: "scale(1.05)",
                   },
                 }}
@@ -102,7 +101,8 @@ const Header = () => {
             onClick={toggleDrawer}
             sx={{
               display: { xs: "flex", md: "none" },
-              background: "#f5f5f5",
+              background: "rgba(245,245,245,0.7)",
+              backdropFilter: "blur(10px)",
               boxShadow: `
                 4px 4px 6px #d1d1d1,
                 -4px -4px 6px #ffffff
@@ -129,7 +129,8 @@ const Header = () => {
           display: { xs: "block", md: "none" },
           "& .MuiDrawer-paper": {
             width: 240,
-            background: "#f5f5f5",
+            background: "rgba(245,245,245,0.7)",
+            backdropFilter: "blur(10px)",
             boxShadow: `
               inset 4px 4px 6px #d1d1d1,
               inset -4px -4px 6px #ffffff

@@ -1,5 +1,5 @@
 // src/components/Hero.tsx
-import { Box, Typography, Avatar, Button } from "@mui/material";
+import { Box, Typography, Avatar } from "@mui/material";
 import { motion } from "framer-motion";
 import  { heroData } from "../mocks/data";
 import NeoButton from "../widgets/NeoButton";

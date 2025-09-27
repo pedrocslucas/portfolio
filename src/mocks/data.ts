@@ -34,7 +34,7 @@ export const aboutData = {
     { name: "Python", icon: FaPython, description: "Linguagem de Programação" },
     { name: "C#", icon: FaCuttlefish, description: "Linguagem de Programação" },
     { name: "JAVA", icon: FaJava, description: "Linguagem de Programação" },
-    { name: "SpringBoot", icon: FaJava, description: "Framework" },
+    { name: "SpringBoot", icon: SiSpringboot, description: "Framework" },
     { name: "HTML", icon: FaHtml5, description: "HyperText" },
     { name: "CSS", icon: FaCss3Alt, description: "Estilo" },
     { name: "SQL", icon: FaDatabase, description: "Banco de Dados" },
